@@ -1,0 +1,94 @@
+.container {
+    padding-top : 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "dis dis dis dis"
+    "AC AC div mult"
+    "seven eight nine min"
+    "four five six plus"
+    "one two three equals"
+    "zero zero decimal equals";
+}
+
+.padButton {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: grey;
+    color: white;
+    border: 1px solid black;
+    cursor:pointer;
+    font-size: 20px;
+}
+
+.numbers {
+    background-color: #222f3e;
+}
+
+.green{
+    background-color: #10ac84;
+}
+
+.display{
+    margin-left: 3px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: right;
+    width: 100%;
+}
+
+.padButton:hover{
+    border: 1px solid white;
+    background-color: black;
+    color: blue;
+}
+
+input::placeholder{
+    color: white;
+}
+
+
+.total {
+    padding-top: 5px;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    color:cadetblue;
+}
+
+.bluer{
+    background-color: #0abde3;
+}
+
+.purple{
+    background-color: #341f97;
+}
+
+.zero{
+    grid-area: zero;
+}
+
+.AC{
+    grid-area: AC;
+}
+
+.equals{
+    grid-area: equals;
+}
+.dis{
+    background-color: black;
+    grid-area: dis;
+    text-align: right;
+    font-size: 20px;
+
+}
